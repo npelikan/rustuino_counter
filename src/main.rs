@@ -57,7 +57,7 @@ fn main() -> ! {
             disp_f.set_low();
             disp_g.set_low();
 
-            let segments= match counter {
+            let segments = match counter {
                 0 => "abcdef",
                 1 => "bc",
                 2 => "abdeg",
