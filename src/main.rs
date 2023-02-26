@@ -8,16 +8,6 @@ fn main() -> ! {
     let dp = arduino_hal::Peripherals::take().unwrap();
     let pins = arduino_hal::pins!(dp);
 
-    /*
-     * For examples (and inspiration), head to
-     *
-     *     https://github.com/Rahix/avr-hal/tree/main/examples
-     *
-     * NOTE: Not all examples were ported to all boards!  There is a good chance though, that code
-     * for a different board can be adapted for yours.  The Arduino Uno currently has the most
-     * examples available.
-     */
-
     // defining seven-segment pins
     let mut disp_a = pins.d3.into_output();
     let mut disp_b = pins.d2.into_output();
@@ -37,16 +27,6 @@ fn main() -> ! {
     // setting start points of the button pins
     let mut last_switchup_state = false;
     let mut last_switchdown_state = false;
-    
-    // loop {
-    //     disp_a.toggle();
-    //     disp_b.toggle();
-    //     disp_c.toggle();
-    //     disp_d.toggle();
-    //     disp_e.toggle();
-    //     disp_f.toggle();
-    //     arduino_hal::delay_ms(2000);
-    // }
     
     loop {
 
