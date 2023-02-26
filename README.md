@@ -1,9 +1,10 @@
+# Rustino Counter
+
 A simple Arduino counter program, written in Rust.
 
+## About
 
-Created using `avr-hal-template`
-==================
-[`cargo-generate`] template for jumpstarting projects on common AVR
+Created using `avr-hal-template`, a [`cargo-generate`] template for jumpstarting projects on common AVR
 microcontroller boards.  This template supports the following hardware at this
 time:
 
